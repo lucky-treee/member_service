@@ -5,6 +5,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
-@FeignClient(name = "notification_service", configuration = FeignClientConfig.class)
+@FeignClient(name = "notification-service", configuration = FeignClientConfig.class)
 public interface FeignClients {
 }
