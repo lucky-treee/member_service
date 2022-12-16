@@ -10,4 +10,4 @@ spring:
       name: mysql, eureka, actuator
       profile: develop
 server:
-  port: 8555
+  port: 10100
