@@ -16,7 +16,7 @@ public class MailController {
     private final MailService mailService;
 
     @PostMapping("/mail")
-    public void execMail(@RequestBody Mail mailDto){
-        mailService.mailSend(mailDto);
+    public void execMail(@RequestBody Mail mail){
+        mailService.mailSend(mail);
     }
 }

@@ -12,12 +12,12 @@ public class MailService {
     private JavaMailSender javaMailSender;
     private static final String FROM_ADDRESS = "ihcho620@gmail.com";
 
-    public void mailSend(Mail mailDto){
+    public void mailSend(Mail mail){
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setTo(mailDto.getAddress());
+        message.setTo(mail.getAddress());
         message.setFrom(MailService.FROM_ADDRESS);
-        message.setSubject(mailDto.getTitle());
-        message.setText(mailDto.getMessage());
+        message.setSubject(mail.getTitle());
+        message.setText(mail.getMessage());
         javaMailSender.send(message);
     }
 }
